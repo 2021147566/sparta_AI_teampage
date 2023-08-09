@@ -13,7 +13,7 @@
         body {
             margin: 0;
         }
-
+         /*내비게이션 바*/       
         .nav {
             list-style-type: none;
             width: 17%;
@@ -32,15 +32,18 @@
             display: block;
             color: #e8344e;
             padding-top: 10%;
-
             background-color: transparent;
         }
-
+        .back:hover {
+            color: rgb(30, 30, 30);
+            transform: scale(1.1);
+        }
         .profile {
             margin-top: 50%;
             margin-bottom: 15%;
             width: 70%;
-            border-radius: 70%
+            border-radius: 70%;
+            object-fit: cover;
         }
 
         .menu {
@@ -54,16 +57,89 @@
         .menu:hover {
             color: rgb(0, 0, 0);
             font-weight: 500;
+            font-size: 27px;
         }
-
+        /*본문*/
         .content {
-            margin-left: 21%;
+            margin-left: 21.5%;
             width: 83%;
-            height: 1000px;
+            height: 100vh;
             font-family: 'Nanum Gothic', sans-serif;
             float: left;
         }
+        /*sns 링크 아이콘*/
+        .sns ul {
+            position: relative;
+            top: 50%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: left;
+        }
 
+        .sns li {
+            list-style: none;
+            margin-right:27px;
+        }
+
+        .sns li:hover {
+            transform: scale(1.1);
+        }
+
+        .sns ul li a {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .github {
+            content: "";
+            background-image: url("https://cdn-icons-png.flaticon.com/512/25/25231.png");
+            background-size:40px 40px;
+            background-repeat: no-repeat;
+            display:inline-block;
+            margin: 5px 0 0 5px;
+        }
+
+        .blog {
+            content: "";
+            background-image: url("https://cdn-icons-png.flaticon.com/512/4922/4922073.png");
+            background-size:40px 40px;
+            background-repeat: no-repeat;
+            display:inline-block;
+            margin: 5px 0 0 5px;
+        }
+        .email {
+            content:"";
+            background-image: url("https://www.freepnglogos.com/uploads/email-logo-png-27.png");
+            background-size:40px 40px;
+            background-repeat: no-repeat;
+            display:inline-block;
+            margin: 5px 0 0 5px;
+        }
+        .lan {
+            height:60px;
+            margin-top: 2%;
+            margin-right: 1%;
+            object-fit: contain;
+            display:inline-block;
+            object-position: center;
+        }
+        .fav {
+            height:200px;
+            margin-top: 2%;
+            margin-right: 1%;
+            object-fit: contain;
+            border-radius: 30%;
+            display:inline-block;
+            object-position: center;
+        }
     </style>
 </head>
 
@@ -73,23 +149,81 @@
         <img class="profile"
             src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F5900884%2Fattach%2Ff4ac8e81ef3f457b9099402bc80e2ebe"
             alt="짱구">
+        <br><br>
         <li><a href="#" class="menu">About me</a></li>
-        <br>
+        <br><br>
         <li><a href="#" class="menu">Skill</a></li>
-        <br>
-        <li><a href="#" class="menu">Menumenu</a></li>
-        <br>
-        <li><a href="#" class="menu">Menumenu</a></li>
+        <br><br>
+        <li><a href="#" class="menu">What I like</a></li>
     </ul>
 
     <div class="content">
-        <h1 style="margin-top: 20%; font-size: 85px; font-family: 'Nanum Gothic', sans-serif; letter-spacing: 25px;">남의서
+        <h1 style="margin-top: 17%; margin-bottom: 2%; font-size: 85px; font-family: 'Nanum Gothic', sans-serif; letter-spacing: 25px;">남의서
         </h1>
-        <h2
-            style="margin-top: 6.5%; color: rgb(153, 153, 153); margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all">
-            내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을
-            입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요 내용을 입력하세요
-            내용을 입력하세요 내용을 입력하세요 내용을 입력하세요</h2>
+        <div class="sns">
+            <ul>                
+                <li><a class="github" href="https://github.com/2021147566" target="_blank" ></a></li>
+                <li><a class="blog" href="https://velog.io/@eaudechance" target="_blank" ></a></li>
+                <li><a class="email" href="mailto:eaudechance@yonsei.ac.kr" target="blank" ></a></li>
+            </ul>
+        </div>
+        <h1 style="margin-top: 5%; font-size: 35px; margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all">
+            About Me
+        </h1>
+        <h2 style="margin-top: 1%; color: rgb(153, 153, 153); margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all; line-height: 1.3em; line-height: 50px;">
+            ENFJ✨ 아직은 컴퓨터가 마냥 재미있는 학부생 남의서입니다!<br>
+            천방지축 어리둥절 빙글빙글 돌아가는 개발자의 하루
+        </h2>
+    </div>
+
+
+
+    <div class="content">
+        <h1 style="margin-top: 10%; font-size: 30px; margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all">
+            사용경험 (언어 및 프레임워크)
+        </h1>
+        <h2 style="margin-top: 1%; color: rgb(106, 106, 106); margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all; line-height: 1.3em; line-height: 50px;">
+            <img class="lan" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png">
+            <img class="lan" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png">
+            <img class="lan" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Dart-logo-wordmark.svg/2560px-Dart-logo-wordmark.svg.png">
+            <img class="lan" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png">
+            <img class="lan" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
+            <img class="lan" src="https://blog.kakaocdn.net/dn/XsNHt/btrb3m0cuQb/62QmvGg1bUVrI5uZfcWEi1/img.png">
+            <img class="lan" src="https://velog.velcdn.com/images/olxtar/post/be633273-b321-49cb-b9a2-c0dee83ebad3/image.png">
+            <img class="lan" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/2560px-Scikit_learn_logo_small.svg.png">
+        </h2>
+        <h1 style=" font-size: 30px; margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all">
+            관심분야
+        </h1>
+        <h2 style="margin-top: 1%; color: rgb(153, 153, 153); margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all; line-height: 1.3em; line-height: 50px;">
+            컴퓨터 비전의 CNN기술과 CL 모델에 관심을 가지고 공부해보았습니다. 학부의 수준이라 자세히는 알지 못하지만, <br>이번 캠프기간 중 스스로 공부를 하면서 더욱 다양한 이론을 학습해볼 예정입니다. <br>미래에는 DevOps 엔지니어로도 일해보고 싶습니다.
+        </h2>
+        <h1 style=" font-size: 30px; margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all">
+            협업 스타일
+        </h1>
+        <h2 style="margin-top: 1%; color: rgb(153, 153, 153); margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all; line-height: 1.3em; line-height: 50px;">
+            갈등이나 어색한 상황을 선호하지 않아 주로 팀내에서 분위기메이커로 활동합니다! 모든 팀원이 저와의 협업을 통해 즐거운 기억과 훌륭한 작업물을 얻어갔으면 하고, 협업 후에는 다같이 성장해있기를 바랍니다.
+        </h2>
+    </div>
+
+
+
+    <div class="content">
+        <h1 style="margin-top: 5%; font-size: 35px; margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all">
+            What I like
+        </h1>
+        <h2 style="width: 70%; margin-top: 1%; display: flex; text-align:left; color: rgb(153, 153, 153); margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all;">
+            <img class="fav" src="https://mblogthumb-phinf.pstatic.net/MjAyMTA3MTlfMTQg/MDAxNjI2Njc1NDI2NjE0.rOQwhFSg25IEbMbHkHzL1Y89mZ70OBJKrmB7CJg6EVkg.EBQqc2FSw4rXti5TV16_edQT-s9UMjhcTAsnDn-7POog.JPEG.xdbxdbx/1626441661216.jpg?type=w800">
+            <a style = "margin-top: 9%; margin-left: 2%;">짱구를 광적으로 좋아합니다. 8월 17일 투니버스에서 짱구 23기가 개봉되니 많관부,,</a>
+        </h2>
+        <h2 style="margin-top: 1%; display: flex; text-align:left; color: rgb(153, 153, 153); margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all;">
+            <a style = "width: 70%; text-align: right; margin-top: 9%; margin-right: 5%;">산책을 좋아합니다. 새벽에 반포한강공원으로 산책하러 가실 분은 대환영  🙌</a>
+            <img class="fav" src="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.6435-9/108958676_961032534412587_808529326558312297_n.jpg?stp=dst-jpg_p600x600&_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=dIrE5wRG3rcAX9x2Tm6&_nc_ht=scontent-ssn1-1.xx&oh=00_AfDWzmUeZErV87Wm0PmoBDj-zh4-qCJRzuZZLMPJGm2Vtw&oe=64FA684A">
+        </h2>
+        <h2 style="width: 75%; margin-top: 1%; display: flex; text-align:left; color: rgb(153, 153, 153); margin-left:5px; margin-right: 300px; font-weight: 300; word-break: keep-all;">
+            <img class="fav" src="./heart.jpg">
+            <a style = "margin-top: 9%; margin-left: 2%;">좋사좋시 ❤ 좋은 사람과 좋은 시간에 함께하는 술을 좋아합니다! 그러나 과음은 금물 😅</a>
+        </h2>
     </div>
 </body>
 
